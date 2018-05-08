@@ -6,7 +6,7 @@
 
  Installation instructions, copy and paste the whole command below in your terminal.
 
-`cd /home/$USER/Downloads && git clone https://github.com/coreybruce/Xubuntu-setup-script && cd Xubuntu-setup-script && sh install-pack-64bit.sh`
+```cd /home/$USER/Downloads && git clone https://github.com/coreybruce/Xubuntu-setup-script && cd Xubuntu-setup-script && sh install-pack-64bit.sh```
 
  ### Author
   * Corey Bruce
