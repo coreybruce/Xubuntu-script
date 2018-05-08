@@ -53,7 +53,7 @@ wget https://mirrors.edge.kernel.org/pub/linux/bluetooth/bluez-5.9.tar.xz
 tar xf bluez-*.tar.xz
 cd bluez-*
 ./configure --prefix=/usr --mandir=/usr/share/man
-sudo make && sudo make install
+make && sudo make install
 
 #Compton
 sudo apt install cmake asciidoc libglu1-mesa-dev freeglut3-dev mesa-common-dev libconfig-dev libxrender-dev libx11-dev libxrandr-dev libxinerama-dev libdbus-1-dev libpcre3-dev
