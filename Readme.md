@@ -1,7 +1,7 @@
 
  # Xubuntu setup script
 
- ## Xubuntu 16.04 64bit install pack 2.7
+ ## Xubuntu 16.04 64bit install pack 2.8
  ### For Xubuntu 16.04 LTS, will make a new version for Xubuntu 18.04 LTS
 
  Installation instructions, copy and paste the whole command below in your terminal.
