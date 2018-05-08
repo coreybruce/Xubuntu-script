@@ -1,4 +1,4 @@
-#Xubuntu 16.04 64bit install pack 2.6
+#Xubuntu 16.04 64bit install pack 2.7
 
 sudo apt-get update
 
@@ -62,16 +62,6 @@ cd compton
 sudo make docs
 sudo make install
 sudo apt autoremove
-
-#Downloading Configs and extra stuff
-
-cd /tmp
-wget https://xubuntu-archive.netlify.com/files/xfpanel-switch.tar.gz
-wget https://xubuntu-archive.netlify.com/files/xfce-config.tar.gz
-wget https://xubuntu-archive.netlify.com/files/compton.desktop
-wget https://xubuntu-archive.netlify.com/files/Wallpapers.tar.gz
-wget https://xubuntu-archive.netlify.com/files/sys-icons.tar.gz
-wget https://xubuntu-archive.netlify.com/files/whiskermenu-1.rc
 
 #Setting Configs
 tar -xvzf xfpanel-switch.tar.gz
