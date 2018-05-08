@@ -19,6 +19,7 @@ sudo make install
 sudo apt-get remove --auto-remove ubuntu-gnome-desktop gnome-shell
 sudo apt autoremove
 
+
 #Gnome tools & other tools
 
 sudo apt-get install gnome-screensaver gnome-system-monitor gnome-terminal gnome-disk-utility exfat-fuse exfat-utils shotwell git preload gdebi synaptic gnome-mpv seahorse fonts-roboto
@@ -48,7 +49,7 @@ sudo mv "Splice/Splice.tar.gz" /usr/share/dockbarx/themes/
 #Bluetooth BlueZ update/fix (feel free to do the same for newer versions if you want)
 cd /tmp
 sudo apt install libudev-dev libreadline-dev libical-dev
-wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.48.tar.xz
+wget https://mirrors.edge.kernel.org/pub/linux/bluetooth/bluez-5.9.tar.xz
 tar xf bluez-*.tar.xz
 cd bluez-*
 ./configure --prefix=/usr --mandir=/usr/share/man
