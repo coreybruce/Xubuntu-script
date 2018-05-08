@@ -8,5 +8,11 @@
 
 ```cd /home/$USER/Downloads && git clone https://github.com/coreybruce/Xubuntu-setup-script && cd Xubuntu-setup-script && sh install-pack-64bit.sh```
 
+ ## How Xubuntu will look.
+
+  ![picture](https://i.imgur.com/UBXghXt.jpg)
+
+  Comes with light and dark window manager theme so feel free to change that in settings>Window Manager than select Windows-10-Dark.
+
  ### Author
   * Corey Bruce
