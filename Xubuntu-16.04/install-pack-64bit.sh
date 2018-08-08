@@ -1,4 +1,4 @@
-#Xubuntu 16.04 64bit install pack 2.8
+#Xubuntu 16.04 64bit install pack 2.9
 
 sudo apt-get update
 
@@ -8,30 +8,30 @@ sudo add-apt-repository ppa:dockbar-main/ppa
 sudo apt-get update
 sudo apt-get install --install-recommends xfce4-dockbarx-plugin dockbarx-themes-extra
 
-#ARC theme
+#replaced Arc with Adapta as it's no longer maintained
+#Adapta theme
 
 cd /tmp
-sudo apt install autoconf automake pkg-config libgtk-3-dev git
-git clone https://github.com/horst3180/arc-theme
-cd arc-theme
-./autogen.sh --prefix=/usr
-sudo make install
-sudo apt-get remove --auto-remove ubuntu-gnome-desktop gnome-shell
-sudo apt autoremove
+sudo apt install autoconf automake pkg-config libgtk-3-dev git sassc inkscape parallel
+git clone https://github.com/adapta-project/adapta-gtk-theme
+cd adapta-gtk-theme
+./autogen.sh
+./configure
+make && sudo make install
 
 
 #Gnome tools & other tools
 
-sudo apt-get install gnome-screensaver gnome-system-monitor gnome-terminal gnome-disk-utility exfat-fuse exfat-utils shotwell git preload gdebi synaptic gnome-mpv seahorse fonts-roboto
+sudo apt-get install gnome-system-monitor gnome-terminal gnome-disk-utility exfat-fuse exfat-utils shotwell git preload gdebi synaptic gnome-mpv seahorse fonts-roboto
 
 #Flat Remix icon Theme
 
 cd /tmp
 git clone https://github.com/daniruiz/Flat-Remix
-sudo mv "flat-remix/Flat-Remix" /usr/share/icons/
-sudo mv "flat-remix/Flat-Remix-Dark" /usr/share/icons/
-sudo mv "flat-remix/Flat-Remix-Light" /usr/share/icons/
-sudo mv "flat-remix/Flat-Remix-Dark" /usr/share/icons/
+sudo mv "Flat-Remix/Flat-Remix" /usr/share/icons/
+sudo mv "Flat-Remix/Flat-Remix-Dark" /usr/share/icons/
+sudo mv "Flat-Remix/Flat-Remix-Light" /usr/share/icons/
+sudo mv "Flat-Remix/Flat-Remix-Dark" /usr/share/icons/
 
 #Windows 10 theme (literally only using the window manager theme but you can use it if you want)
 cd /tmp
@@ -50,7 +50,7 @@ sudo mv "Splice/Splice.tar.gz" /usr/share/dockbarx/themes/
 cd /tmp
 sudo apt install libudev-dev libreadline-dev libical-dev
 wget https://mirrors.edge.kernel.org/pub/linux/bluetooth/bluez-5.9.tar.xz
-tar xf bluez-*.tar.xz
+tar xf bluez-5.9.tar.xz
 cd bluez-*
 ./configure --prefix=/usr --mandir=/usr/share/man
 make && sudo make install
@@ -93,7 +93,7 @@ xfconf-query -c xfwm4 -p /general/theme -s Windows-10
 sudo apt-get remove --purge libreoffice*
 sudo apt-get clean
 sudo apt-get autoremove
-sudo apt-get remove --purge libreoffice* ristretto pidgin parole light-locker
+sudo apt-get remove --purge libreoffice* ristretto pidgin parole
 sudo apt-get clean
 sudo apt-get autoremove
 sudo preload
