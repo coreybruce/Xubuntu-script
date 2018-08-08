@@ -1,4 +1,4 @@
-#Xubuntu 16.04 64bit install pack 2.9
+#Xubuntu 16.04 64bit install pack 2.9-1
 
 sudo apt-get update
 
@@ -63,6 +63,13 @@ cd compton
 sudo make docs
 sudo make install
 sudo apt autoremove
+
+#Downloading config files
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/sys-icons.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/wallpapers.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/whiskermenu-1.rc
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfce-config.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfpanel-switch.tar.gz
 
 #Setting Configs
 tar -xvzf xfpanel-switch.tar.gz
