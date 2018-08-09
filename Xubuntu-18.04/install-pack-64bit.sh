@@ -1,28 +1,24 @@
-#Xubuntu 16.04 64bit install pack 2.9-1
+#Xubuntu 18.04 64bit install pack 1.0.0
 
 sudo apt-get update
 
 #Dockbarx
 
-sudo add-apt-repository ppa:dockbar-main/ppa
+sudo add-apt-repository ppa:xuzhen666/dockbarx
 sudo apt-get update
-sudo apt-get install --install-recommends xfce4-dockbarx-plugin dockbarx-themes-extra
+sudo apt-get install xfce4-dockbarx-plugin dockbarx-themes-extra
 
 #replaced Arc with Adapta as it's no longer maintained
 #Adapta theme
 
-cd /tmp
-sudo apt install autoconf automake pkg-config libgtk-3-dev git sassc inkscape parallel
-git clone https://github.com/adapta-project/adapta-gtk-theme
-cd adapta-gtk-theme
-./autogen.sh
-./configure
-make && sudo make install
+sudo add-apt-repository ppa:tista/adapta
+sudo apt update
+sudo apt install adapta-gtk-theme
 
 
 #Gnome tools & other tools
 
-sudo apt-get install gnome-system-monitor gnome-terminal gnome-disk-utility exfat-fuse exfat-utils shotwell git preload gdebi synaptic gnome-mpv seahorse fonts-roboto
+sudo apt-get install gnome-system-monitor gnome-terminal gnome-disk-utility exfat-fuse exfat-utils shotwell git preload gdebi synaptic gnome-mpv seahorse fonts-roboto file-roller
 
 #Flat Remix icon Theme
 
@@ -65,11 +61,11 @@ sudo make install
 sudo apt autoremove
 
 #Downloading config files
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/sys-icons.tar.gz
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/wallpapers.tar.gz
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/whiskermenu-1.rc
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfce-config.tar.gz
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfpanel-switch.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/sys-icons.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/wallpapers.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/whiskermenu-1.rc
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/xfce-config.tar.gz
+wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/xfpanel-switch.tar.gz
 
 #Setting Configs
 tar -xvzf xfpanel-switch.tar.gz
@@ -102,7 +98,7 @@ xfconf-query -c xfwm4 -p /general/theme -s Windows-10
 sudo apt-get remove --purge libreoffice*
 sudo apt-get clean
 sudo apt-get autoremove
-sudo apt-get remove --purge libreoffice* ristretto pidgin parole
+sudo apt-get remove --purge libreoffice* ristretto pidgin parole engrampa engrampa-common
 sudo apt-get clean
 sudo apt-get autoremove
 sudo preload
