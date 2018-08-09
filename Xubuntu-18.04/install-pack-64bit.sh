@@ -1,4 +1,4 @@
-#Xubuntu 16.04 64bit install pack 2.9-2
+#Xubuntu 16.04 64bit install pack 2.9-1
 
 sudo apt-get update
 
@@ -65,16 +65,11 @@ sudo make install
 sudo apt autoremove
 
 #Downloading config files
-cd /tmp
 wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/sys-icons.tar.gz
 wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/wallpapers.tar.gz
 wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/whiskermenu-1.rc
 wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfce-config.tar.gz
 wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfpanel-switch.tar.gz
-
-#Dockbarx extra themes
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfce8-1.2.tar.gz
-wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/xfce8-1.2_hor.tar.gz
 
 #Setting Configs
 tar -xvzf xfpanel-switch.tar.gz
@@ -83,17 +78,12 @@ tar -xvzf Wallpapers.tar.gz
 tar -xvzf sys-icons.tar.gz
 
 #Moving config files
-mkdir -p /home/$USER/.dockbarx/themes
 mkdir -p ~/.local/share
 mkdir -p ~/.local/share/applications
 mkdir -p ~/.config/autostart/
 cp -r compton.desktop ~/.config/autostart/
 cp -r xfpanel-switch ~/.local/share
 mkdir -p ~/.config
-
-#Moving files
-cp -r xfce8-1.2.tar.gz /home/$USER/.dockbarx/themes
-cp -r xfce8-1.2_hor.tar.gz /home/$USER/.dockbarx/themes
 cp -r xfce4 ~/.config/
 cp -r compton.conf ~/.config
 cp -r Wallpapers /home/$USER/Pictures/
