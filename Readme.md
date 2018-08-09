@@ -5,7 +5,7 @@
 
  ## How Xubuntu will look.
 
-  ![picture](https://i.imgur.com/UBXghXt.jpg)
+  ![picture](https://i.imgur.com/azN5gtW.jpg)
 
   Comes with light and dark window manager theme so feel free to change that in settings>Window Manager than select Windows-10-Dark.
 
