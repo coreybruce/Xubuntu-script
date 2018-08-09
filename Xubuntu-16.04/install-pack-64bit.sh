@@ -76,6 +76,8 @@ tar -xvzf xfpanel-switch.tar.gz
 tar -xvzf xfce-config.tar.gz
 tar -xvzf Wallpapers.tar.gz
 tar -xvzf sys-icons.tar.gz
+
+#Moving config files
 mkdir -p ~/.local/share
 mkdir -p ~/.local/share/applications
 mkdir -p ~/.config/autostart/
@@ -91,7 +93,7 @@ cp -r whiskermenu-1.rc ~/.config/xfce4/panel/
 echo "Setting up looks"
 python3 /usr/share/xfpanel-switch/xfpanel-switch/panelconfig.py load /home/$USER/.local/share/xfpanel-switch/Xubuntu-Custom.tar.bz2
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Flat-Remix"
-xfconf-query -c xsettings -p /Net/ThemeName -s "Arc"
+xfconf-query -c xsettings -p /Net/ThemeName -s "Adapta"
 xfconf-query -c xfwm4 -p /general/theme -s Windows-10
 
 
