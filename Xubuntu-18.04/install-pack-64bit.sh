@@ -51,14 +51,14 @@ cd bluez-*
 ./configure --prefix=/usr --mandir=/usr/share/man
 make && sudo make install
 
-#Compton
-sudo apt install cmake asciidoc libglu1-mesa-dev freeglut3-dev mesa-common-dev libconfig-dev libxrender-dev libx11-dev libxrandr-dev libxinerama-dev libdbus-1-dev libpcre3-dev
-cd /tmp
-git clone https://github.com/chjj/compton
-cd compton
-sudo make docs
-sudo make install
-sudo apt autoremove
+#Compton (experimental) is disabled until performance issues are fixed, will rely on default xfwm4 compositor instead which works fine
+#sudo apt install cmake asciidoc libglu1-mesa-dev freeglut3-dev mesa-common-dev libconfig-dev libxrender-dev libx11-dev libxrandr-dev libxinerama-dev libdbus-1-dev libpcre3-dev
+#cd /tmp
+#git clone https://github.com/chjj/compton
+#cd compton
+#sudo make docs
+#sudo make install
+#sudo apt autoremove
 
 #Downloading config files
 wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/sys-icons.tar.gz
