@@ -1,4 +1,4 @@
-#Xubuntu 16.04 64bit install pack 2.9-2
+#Xubuntu 16.04 64bit install pack 2.9-3
 
 sudo apt-get update
 

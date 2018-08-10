@@ -1,4 +1,4 @@
-#Xubuntu 18.04 64bit install pack 1.0.0
+#Xubuntu 18.04 64bit install pack 1.0.1
 
 sudo apt-get update
 
