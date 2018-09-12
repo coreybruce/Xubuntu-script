@@ -7,17 +7,9 @@
 
   ![picture](http://i.imgur.com/xCmehf7.png)
 
-  Comes with light and dark window manager theme so feel free to change that in settings>Window Manager than select Windows-10-Dark.
+Moved Repo to Gitlab because of storage restrictions on Github.
 
-  ## Xubuntu 18.04 LTS install script 1.0.1
-   Installation instructions, copy and paste the whole command below in your terminal.
-
-  ```cd /home/$USER/Downloads && wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-18.04/install-pack-64bit.sh && cd Xubuntu-setup-script && sh install-pack-64bit.sh```  
-
- ## Xubuntu 16.04 LTS install script 2.9.3
-  Installation instructions, copy and paste the whole command below in your terminal.
-
- ```cd /home/$USER/Downloads && wget https://github.com/coreybruce/Xubuntu-setup-script/raw/master/Xubuntu-16.04/install-pack-64bit.sh && cd Xubuntu-setup-script && sh install-pack-64bit.sh```  
+https://gitlab.com/coreybruce/xubuntu-setup-script
 
  ### Author
   * Corey Bruce
